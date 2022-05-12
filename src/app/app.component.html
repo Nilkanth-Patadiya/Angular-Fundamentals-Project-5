@@ -1,0 +1,16 @@
+<div>
+<h1>DOJ :{{doj | date:'EEEE, d, MMMM, y' |uppercase}}</h1>
+<h1>Name: {{nm | titlecase}}</h1>
+<h1>  {{num1 | number:'.4-8'}}   </h1>
+<h1> Salary  {{sal | currency:'INR':false:'.1'}}  </h1>
+<h1>Marks {{mark | percent}}   </h1>
+<h1>
+Jainma : {{dob | date : 'medium' | lowercase}}
+</h1>
+<h1> {{p1 | json}} </h1>
+<h1> {{p1.price |myTell:p1.productname}} </h1>
+<h1>
+{{nm |uppercase |slice :-11:-6}}
+</h1>
+
+</div>
